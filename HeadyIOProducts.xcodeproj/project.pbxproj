@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F8C7F2DE907D24263F5E28F /* Pods_HeadyIOProducts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 956C8F16B2DDC372F37B820E /* Pods_HeadyIOProducts.framework */; };
 		FA32D5CC229BE757001CC9C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32D5CB229BE757001CC9C0 /* AppDelegate.swift */; };
 		FA32D5CE229BE757001CC9C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32D5CD229BE757001CC9C0 /* ViewController.swift */; };
 		FA32D5D1229BE757001CC9C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA32D5CF229BE757001CC9C0 /* Main.storyboard */; };
 		FA32D5D3229BE758001CC9C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA32D5D2229BE758001CC9C0 /* Assets.xcassets */; };
 		FA32D5D6229BE758001CC9C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA32D5D4229BE758001CC9C0 /* LaunchScreen.storyboard */; };
+		FA450A39229BEC8800CD1CF6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA450A38229BEC8800CD1CF6 /* NetworkManager.swift */; };
+		FA450A3D229C1BBE00CD1CF6 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA450A3C229C1BBE00CD1CF6 /* DataManager.swift */; };
+		FA450A41229C432B00CD1CF6 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA450A40229C432B00CD1CF6 /* ServiceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		956C8F16B2DDC372F37B820E /* Pods_HeadyIOProducts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeadyIOProducts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF4F7B448706A4452CDFBA10 /* Pods-HeadyIOProducts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeadyIOProducts.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeadyIOProducts/Pods-HeadyIOProducts.debug.xcconfig"; sourceTree = "<group>"; };
+		B3B7B85E4AB2F2D927DC6FB0 /* Pods-HeadyIOProducts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeadyIOProducts.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeadyIOProducts/Pods-HeadyIOProducts.release.xcconfig"; sourceTree = "<group>"; };
 		FA32D5C8229BE757001CC9C0 /* HeadyIOProducts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeadyIOProducts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA32D5CB229BE757001CC9C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA32D5CD229BE757001CC9C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,9 @@
 		FA32D5D2229BE758001CC9C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA32D5D5229BE758001CC9C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA32D5D7229BE758001CC9C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA450A38229BEC8800CD1CF6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FA450A3C229C1BBE00CD1CF6 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		FA450A40229C432B00CD1CF6 /* ServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F8C7F2DE907D24263F5E28F /* Pods_HeadyIOProducts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FF91336912AEA714FA088BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF4F7B448706A4452CDFBA10 /* Pods-HeadyIOProducts.debug.xcconfig */,
+				B3B7B85E4AB2F2D927DC6FB0 /* Pods-HeadyIOProducts.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C3D21B9A7E2C1EE07A5A22EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				956C8F16B2DDC372F37B820E /* Pods_HeadyIOProducts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FA32D5BF229BE757001CC9C0 = {
 			isa = PBXGroup;
 			children = (
 				FA32D5CA229BE757001CC9C0 /* HeadyIOProducts */,
 				FA32D5C9229BE757001CC9C0 /* Products */,
+				4FF91336912AEA714FA088BF /* Pods */,
+				C3D21B9A7E2C1EE07A5A22EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +90,19 @@
 				FA32D5D2229BE758001CC9C0 /* Assets.xcassets */,
 				FA32D5D4229BE758001CC9C0 /* LaunchScreen.storyboard */,
 				FA32D5D7229BE758001CC9C0 /* Info.plist */,
+				FA450A37229BEC5600CD1CF6 /* Manager */,
 			);
 			path = HeadyIOProducts;
+			sourceTree = "<group>";
+		};
+		FA450A37229BEC5600CD1CF6 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				FA450A38229BEC8800CD1CF6 /* NetworkManager.swift */,
+				FA450A3C229C1BBE00CD1CF6 /* DataManager.swift */,
+				FA450A40229C432B00CD1CF6 /* ServiceManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA32D5DA229BE758001CC9C0 /* Build configuration list for PBXNativeTarget "HeadyIOProducts" */;
 			buildPhases = (
+				FCA8E65D0F972216A0BAE9D1 /* [CP] Check Pods Manifest.lock */,
 				FA32D5C4229BE757001CC9C0 /* Sources */,
 				FA32D5C5229BE757001CC9C0 /* Frameworks */,
 				FA32D5C6229BE757001CC9C0 /* Resources */,
+				9EF6D2448909A79E70C41368 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +173,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9EF6D2448909A79E70C41368 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HeadyIOProducts/Pods-HeadyIOProducts-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeadyIOProducts/Pods-HeadyIOProducts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCA8E65D0F972216A0BAE9D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HeadyIOProducts-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FA32D5C4229BE757001CC9C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA450A39229BEC8800CD1CF6 /* NetworkManager.swift in Sources */,
+				FA450A3D229C1BBE00CD1CF6 /* DataManager.swift in Sources */,
 				FA32D5CE229BE757001CC9C0 /* ViewController.swift in Sources */,
 				FA32D5CC229BE757001CC9C0 /* AppDelegate.swift in Sources */,
+				FA450A41229C432B00CD1CF6 /* ServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +367,7 @@
 		};
 		FA32D5DB229BE758001CC9C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF4F7B448706A4452CDFBA10 /* Pods-HeadyIOProducts.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +386,7 @@
 		};
 		FA32D5DC229BE758001CC9C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3B7B85E4AB2F2D927DC6FB0 /* Pods-HeadyIOProducts.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
