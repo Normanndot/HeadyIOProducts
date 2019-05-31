@@ -13,18 +13,6 @@ protocol RankingsViewModel {
     var rankings: [Rankings] { get }
 }
 
-protocol MostViewedProducts {
-    var products: [Product] { get }
-}
-
-protocol MostSharedProducts {
-    var products: [Product] { get }
-}
-
-protocol MostOrderedProducts {
-    var products: [Product] { get }
-}
-
 protocol AllProducts {
     var products: [Product] { get }
 }
@@ -61,7 +49,7 @@ class RankingViewModelForProduct: NSObject, RankingsViewModel {
     }
 }
 
-class ProductsBasedOnRank: NSObject, MostViewedProducts {
+class ProductsBasedOnRank: NSObject, AllProducts {
     var products: [Product]
 
     init(with rankIndex: Int) {
