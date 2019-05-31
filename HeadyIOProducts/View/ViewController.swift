@@ -26,9 +26,20 @@ class ViewController: UIViewController {
     }
  
     @ objc func savedSucess(info: NSNotification) {
-        print(ProductsBasedOnRank.init(with: 0).products.count)
         NotificationCenter.default.removeObserver(self,
                                                   name: NSNotification.Name(rawValue: AppConstant.DBSaveNotification),
                                                   object: nil)
+        
+        /*
+        let allCategoryProducts: AllProducts = AllProductsFromCategory()
+        let allProductsBasedOnCategory: AllProducts = ProductBasedOnCategory(with: 1)
+        let allProductBasedOnRank: AllProducts = ProductsBasedOnRank(with: 2)
+        let aProduct: AProduct = ProductBasedOnID(with: 3)
+        
+s        print(allCategoryProducts.products)
+        print(allProductsBasedOnCategory.products)
+        print(allProductBasedOnRank.products)
+        print(aProduct.product)
+         */
     }
 }

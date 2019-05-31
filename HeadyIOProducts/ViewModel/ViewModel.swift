@@ -13,8 +13,16 @@ protocol RankingsViewModel {
     var rankings: [Rankings] { get }
 }
 
+protocol AllCategoryList {
+    var categories: [Category] { get }
+}
+
 protocol AllProducts {
     var products: [Product] { get }
+}
+
+protocol AProduct {
+    var product: Product { get }
 }
 
 class AllProductsFromCategory: AllProducts {
@@ -59,5 +67,25 @@ class ProductsBasedOnRank: NSObject, AllProducts {
             $1.id == $1.id
             }.map{$0.0}
         super.init()
+    }
+}
+
+class ProductBasedOnCategory: NSObject, AllProducts {
+    var products: [Product]
+    
+    init(with id: Int) {
+        let realm = try! Realm()
+        let allCategory = realm.objects(AllCategory.self)[0]
+        self.products = Array(Array(allCategory.categories).filter({$0.id == id})[0].products)
+        super.init()
+    }
+}
+
+class ProductBasedOnID: AProduct {
+    var product: Product
+    
+    init(with id: Int) {
+        let categoryProducts = AllProductsFromCategory.init().products
+        product = categoryProducts.filter({$0.id == id})[0]
     }
 }
