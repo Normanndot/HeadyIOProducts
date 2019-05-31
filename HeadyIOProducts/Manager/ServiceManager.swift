@@ -14,15 +14,6 @@ enum GETURL: String {
 
 public typealias httpRequestCompletionBlock = (_ data: Data?, _ response: Any?, _ error: NSError?) -> Void
 
-class APIHandler {
-    
-    func requestDataToAPI(completionHandler: @escaping httpRequestCompletionBlock) {
-        ServiceManager().execute(request: URL(string: GETURL.stock.rawValue)!,completionBlock: {(data: Data?, response: Any?, error: NSError?) -> Void in
-                completionHandler(data, response, error)
-        })
-    }
-}
-
 class ServiceManager {
 
     func execute(request : URL, completionBlock: @escaping httpRequestCompletionBlock) {
